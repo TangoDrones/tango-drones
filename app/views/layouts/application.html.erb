@@ -7,9 +7,26 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <header class="primary-nav container group">
+      <h1 class="logo">
+        <%= image_tag ("tangoLogo4.png") %>
+        <%= link_to "TANGO DRONES", welcome_index_path %>
+      </h1>
+      <div class='nav nav-options'>
+        <%= link_to "Products", products_index_path %>
+        <%= link_to "Order" , new_order_path %>
+        <%= link_to "Contact", welcome_contact_path %>
+      </div>
+      </div class='nav-options'>
+    </header>
+    <div class="container">
+      <div class="hero">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

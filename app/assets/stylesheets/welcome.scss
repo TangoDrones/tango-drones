@@ -58,9 +58,9 @@ table {
 */
 body {
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url("/assets/drone.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url("/assets/drone.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
   height: 100%;
   /* background-image: radial-gradient(red, yellow); */
 
@@ -157,7 +157,7 @@ h1, h3, h4, h5, p {
 }
 
 h1, h2, h3, h4 {
-	color: white;
+	color: black;
 }
 
 h1 {
@@ -179,14 +179,14 @@ h4 {
 }
 
 h5 {
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
 p {
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -227,11 +227,11 @@ cite, em {
 */
 
 a:hover {
-	color: black;
+	color: gray;
 }
 
 a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -245,7 +245,7 @@ a {
 	text-align: center;
 }
 .logo {
-  font-family: 'Archivo Black', sans-serif;
+	font-family: 'Play', sans-serif;
 	display: inline-block;
 	padding: 20px;
 	font-size: 55px;
@@ -254,7 +254,7 @@ a {
 	/* text-transform: uppercase; */
 	margin: auto;
 	cursor: pointer;
-  color: white;
+  color: black;
 }
 
 
@@ -332,7 +332,7 @@ a {
 }
 
 .hero {
-	color: white;
+	color: black;
 	line-height: 44px;
 	padding: 22px 80px 15px 80px;
 	text-align: center;
@@ -375,4 +375,9 @@ th {
 }
 .full-item {
   width: 211px;
+}
+
+.products-index {
+	padding: 15px;
+	font-size: 24px;
 }

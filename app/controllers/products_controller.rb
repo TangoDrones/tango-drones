@@ -1,6 +1,9 @@
-class OrdersController < ApplicationController
-  def new
-    @parts = [
+class ProductsController < ApplicationController
+  def index
+  end
+
+  def tango_drones
+    @products = [
      {
        "Voltage (S)": 4,
        "Current Rating (C)": 15,
@@ -170,14 +173,21 @@ class OrdersController < ApplicationController
        "Listed Price (USD)": "$95.00"
      }
    ].to_json
-
   end
 
-  def create
-    # send the email
-    # @order = Order.new(params[:order])
-    #
-    # @order.save
-    # redirect_to @order
+  def batteries
+    @products = [].to_json
+  end
+
+  def motors
+    @products = [].to_json
+  end
+
+  def escs
+    @products = [].to_json
+  end
+
+  def propellers
+    @products = [].to_json
   end
 end
