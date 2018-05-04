@@ -2,8 +2,10 @@
 lock "~> 3.10.2"
 
 set :application, "tango"
+set :user, 'tango_devops'
+set :domain, 'tango-drones.com'
 set :tmp_dir, "/home/tango_devops/deploy"
-set :repo_url, "tango_devops@tango-drones.com:/home/tango_devops/code/git/tango-drones.git"
+set :repo_url, "ssh://tango_devops@tango-drones.com/home/tango_devops/code/git/tango-drones.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
