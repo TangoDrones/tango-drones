@@ -1,2 +1,13 @@
 <h1>Submit your order below</h1>
-<%= @parts %>
+<div>Batteries</div>
+<select class="" name="">
+  <% @batteries.each do |product| %>
+    <option value="product"> <%= product[:item_number] %></option>
+  <% end %>
+</select>
+<select class="" name="">
+  <% (1..10).to_a.each do |quantity| %>
+    <option value="quantity"> <%= quantity%></option>
+  <% end %>
+</select>
+<button>Submit</button>

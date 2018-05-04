@@ -1,1 +1,11 @@
 <h1>Batteries</h1>
+<% @products.each do |battery| %>
+  <div class="battery">
+    <div>Full Item #: <%= battery[:item_number] %></div>
+    <div>Voltage (S): <%= battery[:voltage] %></div>
+    <div>Current Rating (C): <%= battery[:current_rating] %></div>
+    <div>Capacity (mAh): <%= battery[:capacity] %></div>
+    <div>Minimum Advertised Price (USD): <%= battery[:ma_price] %></div>
+    <div>Listed Price (USD): <%= battery[:list_price] %></div>
+  </div>
+<% end %>>
