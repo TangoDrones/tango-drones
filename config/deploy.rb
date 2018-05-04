@@ -2,7 +2,7 @@
 lock "~> 3.10.2"
 
 set :application, "tango"
-set :repo_url, "tango_devops@tango-drones.com:git/tango-drones.git"
+set :repo_url, "tango_devops@tango-drones.com:git/home/tango_devops/code/git/tango-drones.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
