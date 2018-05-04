@@ -2,6 +2,7 @@
 lock "~> 3.10.2"
 
 set :application, "tango"
+set :tmp_dir, "/home/deploy"
 set :repo_url, "tango_devops@tango-drones.com:git/home/tango_devops/code/git/tango-drones.git"
 
 # Default branch is :master
